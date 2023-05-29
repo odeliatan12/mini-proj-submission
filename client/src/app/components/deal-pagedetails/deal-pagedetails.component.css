@@ -1,0 +1,110 @@
+.main{
+    margin-top: 5%;
+}
+
+.images{
+    height: 70vh;
+    object-fit: cover;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.headlines p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.jumbotron{
+    height: 110vh;
+}
+@media (max-width: 1500px) {
+    .jumbotron {
+      height: 180vh;
+    }
+}
+@media (max-width: 1200px) {
+    .jumbotron {
+      height: 200vh;
+    }
+}
+@media (max-width: 800px) {
+    .jumbotron {
+      height: 130vh;
+    }
+}
+@media (max-width: 550px) {
+    .jumbotron {
+      height: 130vh;
+    }
+}
+@media (max-width: 1000px) {
+    .jumbotron {
+      height: 100vh;
+    }
+}
+
+.dealName{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:hsla(212, 71%, 22%, 0.1);
+    padding: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.dealAmount{
+    text-align: center;
+    color: #103560;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.dealBtn{
+    text-align: center;
+    background-color: #103560;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 600;
+    width: 100%;
+}
+.about{
+    font-size: 30px;
+    font-weight: 600;
+    color: #103560;
+    margin-bottom: 30px;
+}
+.bi{
+    font-size: 50px;
+    height: 50px;
+    color: #103560;
+}
+.aboutSection{
+    /* height: 100px; */
+    /* vertical-align: middle; */
+    display: block;
+    justify-content: left;
+    text-align: left;
+    padding-top: 10%;
+}
+.aboutSection span{
+    font-size: 25px;
+    font-weight: 400;
+    color: #103560;
+}
+.aboutSection h5{
+    font-size: 15px;
+}
+.aboutSection p{
+    font-size: 20px;
+}
+.openingTimes{
+    margin-bottom: 15px;
+}
+
+

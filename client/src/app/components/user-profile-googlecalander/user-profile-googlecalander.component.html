@@ -1,0 +1,94 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 header" id="exampleModalLabel">{{ nameofRestaurant }}</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form [formGroup]="form">
+        <div class="modal-body">
+          <!-- <h4 class="card-title">{{ idx }}</h4> -->
+          <h2 class="card-title">Details of your reservation</h2>
+          <h4 class="card-title subtitle dt">
+            Address: 
+            <p>
+              {{ location }}
+            </p>
+          </h4>
+          <h4 class="card-title subtitle">
+            Phone Number:
+            <p>
+              +65 {{ contact }}
+            </p>
+          </h4>
+          <h4 class="card-title subtitle">
+            Date Reserved:
+            <p>
+              {{ date }}
+            </p>
+          </h4>
+          <h4 class="card-title subtitle">
+            Time Reserved:
+            <p>
+              {{ startTiming }} - {{ endTiming }}
+            </p>
+          </h4>
+          <!-- <input
+            formControlName="description"
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Description"
+            required=""
+          />
+          <input
+            formControlName="summary"
+            type="text"
+            class="form-control mt-4"
+            id="lastName"
+            placeholder="Summary"
+            required=""
+          /> -->
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+
+          <add-to-calendar-button
+            [attr.name]="nameofRestaurant"
+            options="'Apple','Google', 'iCal'"
+            [attr.location]="location"
+            [attr.startDate]="date"
+            [attr.endDate]="date"
+            [attr.startTime]="startTiming"
+            [attr.endTime]="endTiming"
+            timeZone="Asia/Singapore"
+          ></add-to-calendar-button>
+          <!-- <button
+            type="button"
+            (click)="createGoogleEvent()"
+            class="btn btn-primary"
+          >
+            Add this to Calendar
+          </button> -->
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

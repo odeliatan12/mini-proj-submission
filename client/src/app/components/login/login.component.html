@@ -1,0 +1,55 @@
+<div class="text-center p-5 mt-5">
+  <main class="form-signin w-100 m-auto h3 p-5">
+    <form [formGroup]="form" (ngSubmit)="submitLoginForm()">
+      <h3 class="h3 mb-2 fw-normal loginHeader">Login</h3>
+
+      <div class="row g-3">
+        <!-- name -->
+        <div class="col-sm-12">
+          <input
+            formControlName="username"
+            type="text"
+            class="form-control p-2"
+            id="firstName"
+            placeholder="username"
+          />
+        </div>
+        
+        <!-- Password -->
+        <div class="col-sm-12 input-group">
+          <input
+            formControlName="password"
+            type="password"
+            class="form-control mb-2"
+            id="firstName"
+            placeholder="password"
+            [type]="fieldTextType ? 'text' : 'password'"
+          />
+          <span class="input-group-text mb-2">
+            <i 
+              class="fa"
+              [ngClass]="{
+                'fa-eye-slash': !fieldTextType,
+                'fa-eye': fieldTextType
+              }"
+              (click)="toggleFieldTextType()"></i>
+          </span>
+        </div>
+      </div>
+
+      <app-google-login></app-google-login>
+      
+      <button class="w-100 btn btn-lg btn-primary loginBtn" type="submit">
+        Login
+      </button>
+
+      <div
+        *ngIf="show"
+        class="alert alert-danger size warning mt-4 p-2"
+        role="alert"
+      >
+        {{ error }}
+      </div>
+    </form>
+  </main>
+</div>

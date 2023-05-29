@@ -1,0 +1,94 @@
+.top-margin{
+    margin: 12% 0;
+   
+}
+.numberReviews{
+    line-height: 20px;
+    font-size: 16px;
+    margin-right: 8px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    color: #101125;
+}
+.restaurantName{
+    font-size: 40px;
+    line-height: 36px;
+    padding: 0;
+    display: inline;
+    color: #101125;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+.about, .aboutDetails, .cuisineType{
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding: 0;
+    color: #101125;
+    font-family: 'Noto Sans', sans-serif;
+}
+.aboutDetails{
+    font-size: 20px;
+}
+.aboutRes{
+    margin-bottom: 10px;
+}
+.size{
+    margin-top: 2%;
+    padding: 2%
+}
+.cuisineType{
+    font-size: 16px;
+    color: #6c6f95;
+}
+.resImage{
+    height: 60vh;
+    object-fit: cover;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.reviewsAbout{
+    margin-top: 30px;
+}
+.review{
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    /* outline: 2px solid #10356055; */
+    font-size: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.reviewBtn{
+    margin-left: 0;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 5%;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.reviewBtn:hover{
+    background-color: #103560ad;
+    color: whitesmoke;
+}
+.rating {
+    font-size: 20px;
+}
+
+.filled {
+    color: #f8ce0b;
+    margin-right: 5px; 
+}
+.ratingsStars{
+    margin-left: 5px;
+}
+/*
+.empty {
+    color: #d1d1d1;
+} */

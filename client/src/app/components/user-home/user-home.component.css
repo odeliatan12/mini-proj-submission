@@ -1,0 +1,68 @@
+.main{
+    margin-top: 15%;
+}
+
+.icon{
+    color: black;
+}
+
+section{
+    height: 70vh;
+}
+.btn{
+    padding: 0;
+}
+.foodreview{
+    font-size: 40px;
+    font-weight: 800;
+}
+.custom-icon {
+    width: 40px;
+    height: 40px;
+    color: #f15623;
+}
+.headers-restaurant h4{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 10px;
+    color: #10024a;
+}
+
+.header-restaurant h5{
+    font-weight: 500;
+    color: #10024a;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.title-restaurant{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 24px;
+    overflow: hidden;
+    margin: 2px 0;
+}
+.address-restaurant{
+    color: #6c6f95;
+    font-size: 12px;
+    height: 24px;
+    overflow: hidden;
+}
+.find-out{
+    font-size: 15px;
+    padding: 25px 25px 25px 0;
+    left: 0;
+    color: #10024a;
+    font-weight: 800;
+    font-family: 'Noto Sans', sans-serif;
+}
+.description{
+    color: #10024a;
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.buttonSlide{
+    border: none;
+    background-color: white;
+}

@@ -1,0 +1,100 @@
+<div class="text-center p-5">
+  <main class="form-signin w-100 m-auto h3 p-5 alignment">
+    <form [formGroup]="form" (ngSubmit)="registerUser()">
+      <h3 class="h3 mb-3 fw-normal">Register</h3>
+
+      <label for="name" class="labels form-label fw-normal">Username: </label>
+      <input
+        formControlName="username"
+        type="name"
+        class="form-control mb-2"
+        id="floatingInput"
+      />
+
+      <label for="name" class="labels form-label fw-normal">Email: </label>
+      <input
+        formControlName="email"
+        type="name"
+        class="form-control mb-2"
+        id="floatingInput"
+      />
+      <div
+        *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched"
+        class="alert alert-danger size warning mt-2 p-2"
+        role="alert"
+      >
+        Please enter a proper email
+      </div>
+
+      <label for="name" class="labels form-label fw-normal"
+        >Phone Number:
+      </label>
+      <input
+        formControlName="contact"
+        type="name"
+        class="form-control mb-2"
+        id="floatingInput"
+      />
+
+      <label for="name" class="labels form-label fw-normal"
+        >Password:
+      </label>
+      <div class="col-sm-12 input-group">
+        <input
+          formControlName="password"
+          type="password"
+          class="form-control mb-2 input-group"
+          id="floatingPassword"
+          [type]="fieldTextType ? 'text' : 'password'"
+        />
+        <span class="input-group-text mb-2">
+          <i
+            class="fa"
+            [ngClass]="{
+              'fa-eye-slash': !fieldTextType,
+              'fa-eye': fieldTextType
+            }"
+            (click)="toggleFieldTextType()"
+          ></i>
+        </span>
+      </div>
+      <div
+        *ngIf="form.get('password')?.hasError('required') && form.get('password')?.touched"
+        class="alert alert-danger size warning mt-2 p-2"
+        role="alert"
+      >
+        Password is required
+      </div>
+      <div
+        *ngIf="form.get('password')?.hasError('invalidPassword') && form.get('password')?.touched"
+        class="alert alert-danger size warning mt-2 p-2"
+        role="alert"
+      >
+        Password should have minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number
+      </div>
+
+      <label for="name" class="labels form-label fw-normal"
+        >Select Role:
+      </label>
+      <div class="checkbox mb-3">
+        <label>
+          <select
+            formControlName="roleId"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Select Role</option>
+            <option value="1">Admin</option>
+            <option value="2">User</option>
+          </select>
+        </label>
+      </div>
+
+      <app-google-login></app-google-login>
+
+      <button class="w-100 btn btn-lg btn-primary registerBtn" [disabled]="form.invalid" type="submit">
+        Register
+      </button>
+    </form>
+  </main>
+</div>

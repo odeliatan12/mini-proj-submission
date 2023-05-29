@@ -1,0 +1,44 @@
+
+.navbar-toggler-icon{
+    color: #103560;
+}
+.navbar-brand, .nav-item a{
+    color: #103560;
+    cursor: pointer;
+}
+.navbar-brand{
+    font-weight: 1000;
+    font-size: 24px;
+}
+nav{
+    box-shadow: 1px 10px 11px -4px rgba(173,170,170,0.60);
+    -webkit-box-shadow: 1px 10px 11px -4px rgba(173,170,170,0.60);
+    -moz-box-shadow: 1px 10px 11px -4px rgba(173,170,170,0.60);
+}
+::placeholder {
+    color: #103560;
+}
+
+button{
+    border-color: #103560;
+    color: #103560;
+}
+.active2{
+    border-bottom: 3px solid #103560;
+}
+.nav-link:hover {
+    opacity: 1;
+    border-bottom: 3px solid #103560;
+    transition: 200ms ease-in-out;
+}
+.searchIcon{
+    background-color: #103560;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.searchIcon svg{
+    color: white;
+}
+.show{
+    display: none;
+}
